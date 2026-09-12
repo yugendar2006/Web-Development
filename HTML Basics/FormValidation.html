@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+    </head>
+
+    <body>
+        <h2>Registration Form</h2>
+
+        <form action="welcome.html" method="post">
+             <label for="username">Useranme:</label>
+             <input type="text" id="username" name="username" placeholder="Enter your name" minlength="4" maxlength="15" required>
+             <br><br>
+             <label for="email">Email:</label>
+             <input type="eamil" id="email" name="eamil" placeholder="enter your email" required>
+             <br><br>
+             <label for="age">Age:</label>
+             <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="60" required>
+             <br><br>
+             <label for="password">Password:</label>
+             <input type="password" id="password" name="password" minlength="7" required>
+             <br><br>
+             <label>Gendar:</label>
+             <input type="radio" id="male" name="Gendar" value="male" required>
+             <label for="male">Male:</label>
+             <input type="radio" id="female" name="Gendar" value="female" required>
+             <label for="female">Female:</label>
+             <br><br>
+             <label for="course">Course:</label>
+             <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option selected>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+             </select>
+             <br><br>
+             <label>Skills:</label>
+             <input type="checkbox" id="java" name="skills" value="java">
+             <label for="java">JAVA</label>
+             <input type="checkbox" id="python" name="skills" value="python">
+             <label for="python">PYTHON</label>
+             <br><br>
+              <button type="submit">Register</button>
+        </form>
+    </body>
+</html>
